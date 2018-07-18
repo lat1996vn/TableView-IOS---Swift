@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TableView_Review" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="Rd7-DP-ugT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvX-ZP-07U">
+                                <rect key="frame" x="0.0" y="167" width="375" height="33.5"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BiZ-DE-QKN">
+                                <rect key="frame" x="0.0" y="200" width="375" height="466.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tbvCell" rowHeight="100" id="NM7-IJ-ZBX" customClass="tbvCell" customModule="TableView_Review" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NM7-IJ-ZBX" id="HPO-0z-Tye">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kylian Mbappé 19" translatesAutoresizingMaskIntoConstraints="NO" id="l8V-h2-7Ym">
+                                                    <rect key="frame" x="25" y="10" width="75" height="75"/>
+                                                    <color key="backgroundColor" red="0.94377428760000004" green="0.36612777460000001" blue="0.91390445310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="7iD-OR-dRE"/>
+                                                        <constraint firstAttribute="width" constant="75" id="Njn-sg-iFS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1F-Ee-v3R">
+                                                    <rect key="frame" x="135" y="23.5" width="37" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuổi :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-an-C2q">
+                                                    <rect key="frame" x="135" y="55.5" width="41.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kylian Mbappé" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYL-kj-fcN">
+                                                    <rect key="frame" x="228" y="23.5" width="112" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-8O-vyT">
+                                                    <rect key="frame" x="322" y="55.5" width="18" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l8V-h2-7Ym" firstAttribute="leading" secondItem="HPO-0z-Tye" secondAttribute="leading" constant="25" id="2jF-fZ-F5a"/>
+                                                <constraint firstItem="a0f-8O-vyT" firstAttribute="centerY" secondItem="HPO-0z-Tye" secondAttribute="centerY" constant="16" id="90V-62-ACT"/>
+                                                <constraint firstItem="Q1F-Ee-v3R" firstAttribute="leading" secondItem="l8V-h2-7Ym" secondAttribute="trailing" constant="35" id="AgC-9j-QBa"/>
+                                                <constraint firstItem="fYL-kj-fcN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q1F-Ee-v3R" secondAttribute="trailing" constant="56" id="BxB-4Q-MRB"/>
+                                                <constraint firstItem="fYL-kj-fcN" firstAttribute="centerY" secondItem="HPO-0z-Tye" secondAttribute="centerY" constant="-16" id="CFz-dG-V6u"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="a0f-8O-vyT" secondAttribute="trailing" constant="20" id="O8S-Da-fIe"/>
+                                                <constraint firstItem="Q1F-Ee-v3R" firstAttribute="centerY" secondItem="HPO-0z-Tye" secondAttribute="centerY" constant="-16" id="XZT-KG-aKY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fYL-kj-fcN" secondAttribute="trailing" constant="20" id="ZKX-hp-qT4"/>
+                                                <constraint firstItem="a0f-8O-vyT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="OgT-an-C2q" secondAttribute="trailing" constant="145.5" id="blL-RC-MIa"/>
+                                                <constraint firstItem="OgT-an-C2q" firstAttribute="centerY" secondItem="HPO-0z-Tye" secondAttribute="centerY" constant="16" id="bop-1r-O2g"/>
+                                                <constraint firstItem="OgT-an-C2q" firstAttribute="leading" secondItem="l8V-h2-7Ym" secondAttribute="trailing" constant="35" id="mk4-c7-Nbp"/>
+                                                <constraint firstItem="l8V-h2-7Ym" firstAttribute="top" secondItem="HPO-0z-Tye" secondAttribute="top" constant="10" id="pgz-qb-g8l"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="l8V-h2-7Ym" secondAttribute="bottom" constant="10" id="r9M-Ic-1m7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgFootballPlayer" destination="l8V-h2-7Ym" id="PeJ-Z5-euk"/>
+                                            <outlet property="lblPlayerAge" destination="a0f-8O-vyT" id="94X-h3-LWH"/>
+                                            <outlet property="lblPlayerName" destination="fYL-kj-fcN" id="Xtf-yH-bNV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LvX-ZP-07U" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="5BB-vP-hhY"/>
+                            <constraint firstItem="BiZ-DE-QKN" firstAttribute="top" secondItem="LvX-ZP-07U" secondAttribute="bottom" id="6c6-Ch-VSY"/>
+                            <constraint firstItem="Rd7-DP-ugT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E2A-er-dEt"/>
+                            <constraint firstItem="Rd7-DP-ugT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fyq-To-Izs"/>
+                            <constraint firstItem="LvX-ZP-07U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IWa-bH-75P"/>
+                            <constraint firstItem="LvX-ZP-07U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LvU-iu-U3Z"/>
+                            <constraint firstItem="Rd7-DP-ugT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="RPy-wA-Rp1"/>
+                            <constraint firstItem="Rd7-DP-ugT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sxm-OC-nvy"/>
+                            <constraint firstItem="BiZ-DE-QKN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Xrx-Nr-1Vg"/>
+                            <constraint firstItem="BiZ-DE-QKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z0i-ur-lzH"/>
+                            <constraint firstItem="BiZ-DE-QKN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eWu-MC-kQN"/>
+                            <constraint firstItem="LvX-ZP-07U" firstAttribute="top" secondItem="Rd7-DP-ugT" secondAttribute="bottom" id="k75-Lb-SE0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tbvListPlayer" destination="BiZ-DE-QKN" id="JuG-mN-5tC"/>
+                        <segue destination="GU1-Y4-MNc" kind="showDetail" identifier="MainToDetail" id="AXY-Vr-mbD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="-16"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="2X2-Yf-Ved">
+            <objects>
+                <viewController id="GU1-Y4-MNc" customClass="DetailVC" customModule="TableView_Review" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7z-NS-tDD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCBG" translatesAutoresizingMaskIntoConstraints="NO" id="UUB-7u-wEB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kylian Mbappé 19" translatesAutoresizingMaskIntoConstraints="NO" id="Q3w-Z0-boa">
+                                <rect key="frame" x="56.5" y="54" width="262.5" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpP-T2-qqc">
+                                <rect key="frame" x="56" y="374.5" width="56" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuổi: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4c-ra-3lQ">
+                                <rect key="frame" x="56" y="497.5" width="62" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="19" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-g5-xjd">
+                                <rect key="frame" x="289" y="548.5" width="54" height="37"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cb-Mj-S9d">
+                                <rect key="frame" x="127.5" y="594" width="120" height="33"/>
+                                <color key="backgroundColor" white="0.77706473210000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="miA-on-HWR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Lưu Thay Đổi"/>
+                                <connections>
+                                    <action selector="btnSaveClick:" destination="GU1-Y4-MNc" eventType="touchUpInside" id="j6N-aG-m0b"/>
+                                    <segue destination="Uqv-4Q-cmF" kind="unwind" identifier="DetailToMain" unwindAction="unwindToMainVC:" id="v2k-3j-UxU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kylian Mbappé " borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XE6-Un-Y5K">
+                                <rect key="frame" x="111" y="425.5" width="232" height="37"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rwz-g5-xjd" firstAttribute="top" secondItem="s4c-ra-3lQ" secondAttribute="bottom" constant="18" id="23I-gt-vDB"/>
+                            <constraint firstItem="PpP-T2-qqc" firstAttribute="leading" secondItem="0iM-kt-B1y" secondAttribute="leading" constant="56" id="GST-x6-tKo"/>
+                            <constraint firstItem="0iM-kt-B1y" firstAttribute="trailing" secondItem="PpP-T2-qqc" secondAttribute="trailing" constant="263" id="LxT-AO-jQH"/>
+                            <constraint firstItem="s4c-ra-3lQ" firstAttribute="leading" secondItem="0iM-kt-B1y" secondAttribute="leading" constant="56" id="MHt-LK-EPj"/>
+                            <constraint firstItem="UUB-7u-wEB" firstAttribute="top" secondItem="d7z-NS-tDD" secondAttribute="top" id="Tk0-Qu-F9W"/>
+                            <constraint firstItem="0iM-kt-B1y" firstAttribute="trailing" secondItem="s4c-ra-3lQ" secondAttribute="trailing" constant="257" id="ZUP-eM-QfY"/>
+                            <constraint firstItem="4cb-Mj-S9d" firstAttribute="centerX" secondItem="d7z-NS-tDD" secondAttribute="centerX" id="Zq4-18-0jo"/>
+                            <constraint firstItem="0iM-kt-B1y" firstAttribute="trailing" secondItem="Rwz-g5-xjd" secondAttribute="trailing" constant="32" id="bRK-Cg-KIu"/>
+                            <constraint firstItem="0iM-kt-B1y" firstAttribute="bottom" secondItem="4cb-Mj-S9d" secondAttribute="bottom" constant="40" id="d5G-lF-0pg"/>
+                            <constraint firstItem="Q3w-Z0-boa" firstAttribute="centerX" secondItem="0iM-kt-B1y" secondAttribute="centerX" id="e2X-cr-cwz"/>
+                            <constraint firstItem="UUB-7u-wEB" firstAttribute="leading" secondItem="0iM-kt-B1y" secondAttribute="leading" id="faL-p1-QS9"/>
+                            <constraint firstItem="Rwz-g5-xjd" firstAttribute="leading" secondItem="0iM-kt-B1y" secondAttribute="leading" constant="289" id="fr4-Dq-SSW"/>
+                            <constraint firstItem="Q3w-Z0-boa" firstAttribute="top" secondItem="0iM-kt-B1y" secondAttribute="top" constant="34" id="iPm-VI-hoy"/>
+                            <constraint firstItem="0iM-kt-B1y" firstAttribute="trailing" secondItem="UUB-7u-wEB" secondAttribute="trailing" id="iqL-nx-G81"/>
+                            <constraint firstItem="Q3w-Z0-boa" firstAttribute="width" secondItem="d7z-NS-tDD" secondAttribute="width" multiplier="0.7" id="jhs-et-Irz"/>
+                            <constraint firstItem="UUB-7u-wEB" firstAttribute="bottom" secondItem="0iM-kt-B1y" secondAttribute="bottom" id="nOv-rY-ocM"/>
+                            <constraint firstItem="0iM-kt-B1y" firstAttribute="trailing" secondItem="XE6-Un-Y5K" secondAttribute="trailing" constant="32" id="nzu-KI-6Ea"/>
+                            <constraint firstItem="XE6-Un-Y5K" firstAttribute="leading" secondItem="0iM-kt-B1y" secondAttribute="leading" constant="111" id="pZx-gQ-ArH"/>
+                            <constraint firstItem="Q3w-Z0-boa" firstAttribute="height" secondItem="d7z-NS-tDD" secondAttribute="height" multiplier="0.4" id="s3B-tm-vTh"/>
+                            <constraint firstItem="PpP-T2-qqc" firstAttribute="top" secondItem="Q3w-Z0-boa" secondAttribute="bottom" constant="53.5" id="trB-zw-9Hs"/>
+                            <constraint firstItem="s4c-ra-3lQ" firstAttribute="top" secondItem="PpP-T2-qqc" secondAttribute="bottom" constant="90" id="uMY-Pn-EZg"/>
+                            <constraint firstItem="XE6-Un-Y5K" firstAttribute="top" secondItem="PpP-T2-qqc" secondAttribute="bottom" constant="18" id="ytO-43-ero"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0iM-kt-B1y"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnSave" destination="4cb-Mj-S9d" id="C1c-fy-7jp"/>
+                        <outlet property="imgFootballPlayer" destination="Q3w-Z0-boa" id="BNd-3s-4GK"/>
+                        <outlet property="tfPlayerAge" destination="Rwz-g5-xjd" id="EnF-dE-mr3"/>
+                        <outlet property="tfPlayerName" destination="XE6-Un-Y5K" id="XTC-2n-kEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNd-wM-uqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Uqv-4Q-cmF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="583.20000000000005" y="-16.641679160419791"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Kylian Mbappé 19" width="225" height="225"/>
+        <image name="WCBG" width="750" height="1334"/>
+        <image name="WCBackGround" width="1200" height="600"/>
+    </resources>
+</document>
