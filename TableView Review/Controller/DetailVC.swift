@@ -15,7 +15,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var tfPlayerAge: UITextField!
     @IBOutlet weak var btnSave: UIButton!
     @IBAction func btnSaveClick(_ sender: Any) {
-        //change player info
+        //change player info		
         player.playerName = tfPlayerName.text!
         player.playerAge = tfPlayerAge.text!
     }
